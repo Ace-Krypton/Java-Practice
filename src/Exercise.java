@@ -100,5 +100,14 @@ public class Exercise {
 
         for (int i = 0; i < c.length; i++) System.out.println(c[i] + " ");
         System.out.println('\n');
+
+        //Task 11
+        int[] d = new int[5]; // <- Elements are 0
+        System.out.println("Length of d is: " + d.length);
+
+        for(int i = 0; i < d.length; ++i) System.out.println(d[i] + "");
+        System.out.println('\n');
+
+        //Task 11
     }
 }
