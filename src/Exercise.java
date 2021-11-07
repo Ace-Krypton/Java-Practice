@@ -67,5 +67,38 @@ public class Exercise {
         }
 
         for (int newShuffleArray : shuffleArray) System.out.println(newShuffleArray);
+
+        //Task 8
+        int[] a = {1,2,3};
+        System.out.println("a.length = " + a.length);
+        for (int i = 0; i < a.length; ++i)
+            a[i] = (i+1)*(i+1);
+        for (int i = 0; i < a.length; ++i)
+            System.out.print(a[i]+" ");
+        System.out.println('\n');
+
+        //Task 9
+        //Multidimensional arrays
+        int[][] b = { {1, 2, 3}, {4, 5, 6, 7, 8}, {11, 12} };
+        System.out.println("This is the length of the b :" + b.length);
+
+        for(int row = 0; row < b.length; ++row)
+            System.out.println("b["+row+"].length = " +b[row].length);
+        System.out.println();
+
+        for (int row = 0; row < b.length; ++row) {
+            for (int col = 0; col < b[row].length; ++col){
+                System.out.print(b[row][col] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println('\n');
+
+        //Task 10
+        int[] c = new int[]{1,2,3}; // <- Size inferred
+        System.out.println("c.length = " + c.length);
+
+        for (int i = 0; i < c.length; i++) System.out.println(c[i] + " ");
+        System.out.println('\n');
     }
 }
