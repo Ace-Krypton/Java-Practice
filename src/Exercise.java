@@ -108,6 +108,15 @@ public class Exercise {
         for(int i = 0; i < d.length; ++i) System.out.println(d[i] + "");
         System.out.println('\n');
 
-        //Task 11
+        //Task 12
+        int[][] e = new int[3][2]; // <- a 3x2 matrix
+        System.out.println("Length of is e: " + e.length);
+
+        for (int row1 = 0; row1 < e.length; ++row1){
+            for (int col1 = 0; col1 < e[row1].length; ++col1){
+                e[row1][col1] = row1 + col1;
+            }
+        }
+
     }
 }
